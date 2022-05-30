@@ -4,7 +4,9 @@ import com.spring5.ssddi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan(basePackages = {"com.spring5.ssddi", "com.spring5.pets"})
 @SpringBootApplication
 public class SsdDiApplication {
 
@@ -15,6 +17,10 @@ public class SsdDiApplication {
 
 		String greeting = myController.sayHello();
 		System.out.println(greeting);
+
+		System.out.println("-----The Best Pet is-----");
+		PetController petController = ctx.getBean("petController",PetController.class);
+		System.out.println(petController.whichPetIsTheBest());
 
 		System.out.println("-------Spring Profile--------");
 		I18NController i18NController = (I18NController)ctx.getBean("i18NController");
