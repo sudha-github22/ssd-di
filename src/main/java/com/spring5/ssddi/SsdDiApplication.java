@@ -1,6 +1,8 @@
 package com.spring5.ssddi;
 
 import com.spring5.ssddi.controllers.*;
+import com.spring5.ssddi.services.PrototypeBean;
+import com.spring5.ssddi.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -43,6 +45,17 @@ public class SsdDiApplication {
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController)
 				ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
+
+		System.out.println("------Spring Bean Scope---------");
+		SingletonBean singletonBean1 = ctx.getBean(SingletonBean.class);
+		System.out.println(singletonBean1.getBeanScope());
+		SingletonBean singletonBean2 = ctx.getBean(SingletonBean.class);
+		System.out.println(singletonBean2.getBeanScope());
+
+		PrototypeBean prototypeBean1 = ctx.getBean(PrototypeBean.class);
+		System.out.println(prototypeBean1.getBeanScope());
+		PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
+		System.out.println(prototypeBean2.getBeanScope());
 	}
 
 }

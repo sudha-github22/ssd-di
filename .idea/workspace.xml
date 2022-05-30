@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/pets/CatPetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/pets/DogPetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/pets/PetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/pets/PetServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/controllers/PetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/repositories/EnglishGreetingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/repositories/EnglishGreetingRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ssd-di-config.xml" afterDir="false" />
+    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Springframework configuration concept implemented.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/PrototypeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/SingletonBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/controllers/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/controllers/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/ConstructorGreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/ConstructorGreetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/GreetingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/GreetingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/I18NEnglishGreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/I18NEnglishGreetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/I18NSpanishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/I18NSpanishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/PropertyGreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/PropertyGreetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/SetterGreetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/SetterGreetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/controllers/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/controllers/GreetingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/ConstructorGreetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/ConstructorGreetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/GreetingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/GreetingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/I18NEnglishGreetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/I18NEnglishGreetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/I18NSpanishService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/I18NSpanishService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/PropertyGreetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/PropertyGreetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/SetterGreetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/services/SetterGreetingService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,7 +145,7 @@
       <workItem from="1653222481693" duration="10347000" />
       <workItem from="1653242975718" duration="1986000" />
       <workItem from="1653343351426" duration="18000" />
-      <workItem from="1653858492108" duration="6703000" />
+      <workItem from="1653858492108" duration="8520000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653222767393</created>
@@ -192,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653244767164</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Springframework configuration concept implemented.">
+      <created>1653913375894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653913375894</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Springframework configuration concept implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Springframework configuration concept implemented." />
   </component>
 </project>
