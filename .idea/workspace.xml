@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Spring external properties implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-qa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Springboot profiles in yml file">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +153,7 @@
       <workItem from="1653242975718" duration="1986000" />
       <workItem from="1653343351426" duration="18000" />
       <workItem from="1653858492108" duration="9265000" />
-      <workItem from="1653998391168" duration="3586000" />
+      <workItem from="1653998391168" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653222767393</created>
@@ -204,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654000019311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Springboot profiles in yml file">
+      <created>1654030917989</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654030917989</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +227,7 @@
     <MESSAGE value="Springframework configuration concept implemented." />
     <MESSAGE value="Spring Bean scope(singleton,prototype) examples added" />
     <MESSAGE value="Spring external properties implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring external properties implemented" />
+    <MESSAGE value="Springboot profiles in yml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Springboot profiles in yml file" />
   </component>
 </project>

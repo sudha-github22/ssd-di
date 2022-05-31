@@ -1,8 +1,17 @@
 spring:
   profiles:
-    active: ES,dog
+    active:
+            - ES
+            - dog
+            - prod
 
 ssd:
   username: YMLUser
   password: YMLPassword
   jdbcurl: YMLURL
+
+---
+ssd:
+  username: YmlProdUser
+  password: YmlProdPassword
+  jdbcurl: YmlProdURL
