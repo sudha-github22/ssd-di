@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Springboot profiles in yml file">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="multiple Springboot profiles in one yml file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/SsdConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +157,7 @@
       <workItem from="1653242975718" duration="1986000" />
       <workItem from="1653343351426" duration="18000" />
       <workItem from="1653858492108" duration="9265000" />
-      <workItem from="1653998391168" duration="3724000" />
+      <workItem from="1653998391168" duration="4800000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653222767393</created>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654030917989</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="multiple Springboot profiles in one yml file">
+      <created>1654031099190</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654031099190</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +239,7 @@
     <MESSAGE value="Spring Bean scope(singleton,prototype) examples added" />
     <MESSAGE value="Spring external properties implemented" />
     <MESSAGE value="Springboot profiles in yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Springboot profiles in yml file" />
+    <MESSAGE value="multiple Springboot profiles in one yml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="multiple Springboot profiles in one yml file" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.spring5.ssddi;
 
+import com.spring5.ssddi.config.SsdConfiguration;
 import com.spring5.ssddi.controllers.*;
 import com.spring5.ssddi.datasource.FakeDataSource;
 import com.spring5.ssddi.services.PrototypeBean;
@@ -58,10 +59,17 @@ public class SsdDiApplication {
 		PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
 		System.out.println(prototypeBean2.getBeanScope());
 
+		System.out.println("--------Fake DataSource ---------------");
 		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
 		System.out.println(fakeDataSource.getPassword());
 		System.out.println(fakeDataSource.getJdbcurl());
+
+		System.out.println("---------Ssd Configuration properties bean -----------");
+		SsdConfiguration ssdConfiguration = ctx.getBean(SsdConfiguration.class);
+		System.out.println(ssdConfiguration.getUsername());
+		System.out.println(ssdConfiguration.getPassword());
+		System.out.println(ssdConfiguration.getJdbcurl());
 	}
 
 }

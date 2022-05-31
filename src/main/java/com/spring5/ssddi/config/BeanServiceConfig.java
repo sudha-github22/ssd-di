@@ -14,15 +14,24 @@ import org.springframework.context.annotation.*;
 public class BeanServiceConfig {
 
     @Bean
-    FakeDataSource fakeDataSource(@Value("${ssd.username}") String username,
-                                  @Value("${ssd.password}") String password,
-                                  @Value("${ssd.jdbcurl}") String jdbcurl){
+    FakeDataSource fakeDataSource(SsdConfiguration ssdConfiguration){
         FakeDataSource fakeDataSource = new FakeDataSource();
-        fakeDataSource.setUsername(username);
-        fakeDataSource.setPassword(password);
-        fakeDataSource.setJdbcurl(jdbcurl);
+        fakeDataSource.setUsername(ssdConfiguration.getUsername());
+        fakeDataSource.setPassword(ssdConfiguration.getPassword());
+        fakeDataSource.setJdbcurl(ssdConfiguration.getJdbcurl());
         return fakeDataSource;
     }
+
+//    @Bean
+//    FakeDataSource fakeDataSource(@Value("${ssd.username}") String username,
+//                                  @Value("${ssd.password}") String password,
+//                                  @Value("${ssd.jdbcurl}") String jdbcurl){
+//        FakeDataSource fakeDataSource = new FakeDataSource();
+//        fakeDataSource.setUsername(username);
+//        fakeDataSource.setPassword(password);
+//        fakeDataSource.setJdbcurl(jdbcurl);
+//        return fakeDataSource;
+//    }
     @Bean
     PetServiceFactory petServiceFactory(){
         return new PetServiceFactory();
