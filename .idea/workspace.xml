@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Springframework configuration concept implemented.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/PrototypeBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/services/SingletonBean.java" afterDir="false" />
+    <list default="true" id="b8014e5a-5bd0-4e2e-ba9e-c65c7a0a8514" name="Changes" comment="Spring Bean scope(singleton,prototype) examples added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/datasource/FakeDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/SsdDiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring5/ssddi/config/BeanServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring5/ssddi/SsdDiApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +147,8 @@
       <workItem from="1653222481693" duration="10347000" />
       <workItem from="1653242975718" duration="1986000" />
       <workItem from="1653343351426" duration="18000" />
-      <workItem from="1653858492108" duration="8520000" />
+      <workItem from="1653858492108" duration="9265000" />
+      <workItem from="1653998391168" duration="1182000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653222767393</created>
@@ -175,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653913375894</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Spring Bean scope(singleton,prototype) examples added">
+      <created>1653943668593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653943668597</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +206,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="Springframework configuration concept implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Springframework configuration concept implemented." />
+    <MESSAGE value="Spring Bean scope(singleton,prototype) examples added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Bean scope(singleton,prototype) examples added" />
   </component>
 </project>

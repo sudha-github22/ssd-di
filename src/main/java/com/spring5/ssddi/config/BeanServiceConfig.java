@@ -2,15 +2,28 @@ package com.spring5.ssddi.config;
 
 import com.spring5.pets.PetService;
 import com.spring5.pets.PetServiceFactory;
+import com.spring5.ssddi.datasource.FakeDataSource;
 import com.spring5.ssddi.repositories.EnglishGreetingRepository;
 import com.spring5.ssddi.repositories.EnglishGreetingRepositoryImpl;
 import com.spring5.ssddi.services.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
+@PropertySource("classpath:datasource.properties")
 @ImportResource("classpath:ssd-di-config.xml")
 @Configuration
 public class BeanServiceConfig {
 
+    @Bean
+    FakeDataSource fakeDataSource(@Value("${ssd.username}") String username,
+                                  @Value("${ssd.password}") String password,
+                                  @Value("${ssd.jdbcurl}") String jdbcurl){
+        FakeDataSource fakeDataSource = new FakeDataSource();
+        fakeDataSource.setUsername(username);
+        fakeDataSource.setPassword(password);
+        fakeDataSource.setJdbcurl(jdbcurl);
+        return fakeDataSource;
+    }
     @Bean
     PetServiceFactory petServiceFactory(){
         return new PetServiceFactory();
