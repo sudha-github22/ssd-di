@@ -1,6 +1,7 @@
 package com.spring5.ssddi;
 
 import com.spring5.ssddi.config.SsdConfiguration;
+import com.spring5.ssddi.config.SsdConstructorConfig;
 import com.spring5.ssddi.controllers.*;
 import com.spring5.ssddi.datasource.FakeDataSource;
 import com.spring5.ssddi.services.PrototypeBean;
@@ -70,6 +71,12 @@ public class SsdDiApplication {
 		System.out.println(ssdConfiguration.getUsername());
 		System.out.println(ssdConfiguration.getPassword());
 		System.out.println(ssdConfiguration.getJdbcurl());
+
+		System.out.println("--------- Constructor config properties -----------");
+		SsdConstructorConfig ssdConstructorConfig = ctx.getBean(SsdConstructorConfig.class);
+		System.out.println(ssdConstructorConfig.getUsername());
+		System.out.println(ssdConstructorConfig.getPassword());
+		System.out.println(ssdConstructorConfig.getJdbcurl());
 	}
 
 }

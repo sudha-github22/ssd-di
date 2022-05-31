@@ -7,18 +7,20 @@ import com.spring5.ssddi.repositories.EnglishGreetingRepository;
 import com.spring5.ssddi.repositories.EnglishGreetingRepositoryImpl;
 import com.spring5.ssddi.services.*;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 
+@EnableConfigurationProperties(SsdConstructorConfig.class)
 @ImportResource("classpath:ssd-di-config.xml")
 @Configuration
 public class BeanServiceConfig {
 
     @Bean
-    FakeDataSource fakeDataSource(SsdConfiguration ssdConfiguration){
+    FakeDataSource fakeDataSource(SsdConstructorConfig ssdConstructorConfig){
         FakeDataSource fakeDataSource = new FakeDataSource();
-        fakeDataSource.setUsername(ssdConfiguration.getUsername());
-        fakeDataSource.setPassword(ssdConfiguration.getPassword());
-        fakeDataSource.setJdbcurl(ssdConfiguration.getJdbcurl());
+        fakeDataSource.setUsername(ssdConstructorConfig.getUsername());
+        fakeDataSource.setPassword(ssdConstructorConfig.getPassword());
+        fakeDataSource.setJdbcurl(ssdConstructorConfig.getJdbcurl());
         return fakeDataSource;
     }
 
