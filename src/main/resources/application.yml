@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: ES,dog
+
+ssd:
+  username: YMLUser
+  password: YMLPassword
+  jdbcurl: YMLURL
